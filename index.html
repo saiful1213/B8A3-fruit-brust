@@ -8,51 +8,63 @@
    <!-- daisyUi and tailwind cdn -->
    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
    <script src="https://cdn.tailwindcss.com"></script>
+   <!-- fontAwesome cdn -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
    <!-- customize tailwindcss -->
    <script>
       tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              clifford: '#da373d',
+         theme: {
+            extend: {
+               colors: {
+                  clifford: '#da373d',
+                  primary: '#F85559',
+               }
             }
-          }
-        }
+         }
       }
-    </script>
+   </script>
 </head>
+
 <body>
-   
+
    <header class="max-w-7xl mx-auto">
       <!-- navbar style -->
-      <nav class="navbar bg-base-100">
+      <nav class="navbar bg-base-100 border-2 bg-primary rounded-full">
          <!-- navbar start -->
-         <div class="navbar-center hidden lg:flex">
-           <ul class="menu menu-horizontal px-1">
-             <li><a>Home</a></li>
-             <li><a>About Us</a></li>
-             <li><a>Shop</a></li>
-             <li><a>All Fruits</a></li>
-           </ul>
-         </div>
-         <!-- navbar center -->
-         <div class="navbar-start">
-            <div class="dropdown">
-              <label tabindex="0" class="btn btn-ghost lg:hidden">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-              </label>
-              <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+         <div class="navbar-start hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 text-white font-semibold">
                <li><a>Home</a></li>
                <li><a>About Us</a></li>
                <li><a>Shop</a></li>
                <li><a>All Fruits</a></li>
-              </ul>
+            </ul>
+         </div>
+         <!-- navbar center -->
+         <div class="navbar-center">
+            <div class="dropdown">
+               <label tabindex="0" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                     stroke="currentColor">
+                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                  </svg>
+               </label>
+               <ul tabindex="0"
+                  class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                  <li><a>Home</a></li>
+                  <li><a>About Us</a></li>
+                  <li><a>Shop</a></li>
+                  <li><a>All Fruits</a></li>
+               </ul>
             </div>
-            <a class="btn btn-ghost normal-case text-xl">Fruit Burst</a>
-          </div>
+            <img src="./images/logo.png" class="w-10">
+            <a class="btn btn-ghost normal-case text-xl text-white font-bold lg:text-4xl">Fruit Burst</a>
+         </div>
          <!-- navbar end -->
-         <div class="navbar-end">
-           <a class="btn">Button</a>
+         <div class="navbar-end md:ml-auto lg:m-auto">
+            <div class="form-control relative hidden md:block">
+               <input type="text" placeholder="Search here" class="input rounded-full input-bordered"/>
+               <i class="fa-solid fa-magnifying-glass absolute right-4 top-4"></i>
+            </div>
          </div>
       </nav>
    </header>
