@@ -8,6 +8,10 @@
    <!-- daisyUi and tailwind cdn -->
    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
    <script src="https://cdn.tailwindcss.com"></script>
+   <!-- google fonts -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
    <!-- fontAwesome cdn -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
       integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
@@ -26,9 +30,14 @@
          }
       }
    </script>
+   <style>
+      .lato-fonts{
+         font-family: 'Lato', sans-serif;
+      }
+   </style>
 </head>
 
-<body>
+<body class="lato-fonts">
 
    <header class="max-w-7xl mx-auto">
       <!-- navbar style -->
@@ -166,7 +175,7 @@
          </div>
       </section>
       <!-- deal of the day section -->
-      <section class="border-2 mt-4 lg:mt-0 border-red-500 p-2">
+      <section class="mt-4 lg:mt-0 p-2">
          <!-- flex-container -->
          <div class="flex flex-col md:flex-row justify-between items-center">
             <div class="w-full mb-4 lg:mb-0 md:w-1/2">
@@ -231,22 +240,25 @@
                      <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-1" />
                      <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-2" />
                   </div>
-                  <btn class="text-primary btn normal-case text-lg font-bold" onclick="appleCard.showModal()">Details</btn>
+                  <btn class="text-primary btn normal-case text-lg font-bold" onclick="appleCard.showModal()">Details
+                  </btn>
                </div>
                <!-- Modal -->
                <dialog id="appleCard" class="modal modal-bottom sm:modal-middle">
                   <form method="dialog" class="modal-box">
                      <div class="card rounded-lg card-compact bg-base-100 text-center">
-                        <figure><img src="./images/fruit6.png"/></figure>
+                        <figure><img src="./images/fruit6.png" /></figure>
                         <div class="card-body">
                            <h2 class="text-heading-color text-2xl font-bold">Apple</h2>
-                           <p class="font-semibold">Proffesional employees are there for you to pick the most amazing and fresh fruits</p>
+                           <p class="font-semibold">Proffesional employees are there for you to pick the most amazing
+                              and fresh fruits</p>
                            <!-- rating-container -->
                            <div class="rating rating-lg rating-half mx-auto">
                               <input type="radio" name="rating-10" class="rating-hidden" />
                               <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-1" />
                               <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-2" />
-                              <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-1" checked />
+                              <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-1"
+                                 checked />
                               <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-2" />
                               <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-1" />
                               <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-2" />
@@ -262,7 +274,7 @@
                         </div>
                      </div>
 
-                     
+
                   </form>
                </dialog>
             </div>
@@ -286,22 +298,25 @@
                      <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-1" />
                      <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-2" />
                   </div>
-                  <btn class="text-primary btn normal-case text-lg font-bold" onclick="orangeCard.showModal()">Details</btn>
+                  <btn class="text-primary btn normal-case text-lg font-bold" onclick="orangeCard.showModal()">Details
+                  </btn>
                </div>
                <!-- Modal -->
                <dialog id="orangeCard" class="modal modal-bottom sm:modal-middle">
                   <form method="dialog" class="modal-box">
                      <div class="card rounded-lg card-compact bg-base-100 text-center">
-                        <figure><img src="./images/fruit7.png"/></figure>
+                        <figure><img src="./images/fruit7.png" /></figure>
                         <div class="card-body">
                            <h2 class="text-heading-color text-2xl font-bold">Apple</h2>
-                           <p class="font-semibold">Proffesional employees are there for you to pick the most amazing and fresh fruits</p>
+                           <p class="font-semibold">Proffesional employees are there for you to pick the most amazing
+                              and fresh fruits</p>
                            <!-- rating-container -->
                            <div class="rating rating-lg rating-half mx-auto">
                               <input type="radio" name="rating-10" class="rating-hidden" />
                               <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-1" />
                               <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-2" />
-                              <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-1" checked />
+                              <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-1"
+                                 checked />
                               <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-2" />
                               <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-1" />
                               <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-2" />
@@ -315,7 +330,7 @@
                               <button class="bg-primary text-white btn normal-case">Buy Now</button>
                            </div>
                         </div>
-                     </div>                     
+                     </div>
                   </form>
                </dialog>
             </div>
@@ -339,22 +354,25 @@
                      <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-1" />
                      <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-2" />
                   </div>
-                  <btn class="text-primary btn normal-case text-lg font-bold" onclick="strawbarryCard.showModal()">Details</btn>
+                  <btn class="text-primary btn normal-case text-lg font-bold" onclick="strawbarryCard.showModal()">
+                     Details</btn>
                </div>
                <!-- Modal -->
                <dialog id="strawbarryCard" class="modal modal-bottom sm:modal-middle">
                   <form method="dialog" class="modal-box">
                      <div class="card rounded-lg card-compact bg-base-100 text-center">
-                        <figure><img src="./images/fruit8.png"/></figure>
+                        <figure><img src="./images/fruit8.png" /></figure>
                         <div class="card-body">
                            <h2 class="text-heading-color text-2xl font-bold">Apple</h2>
-                           <p class="font-semibold">Proffesional employees are there for you to pick the most amazing and fresh fruits</p>
+                           <p class="font-semibold">Proffesional employees are there for you to pick the most amazing
+                              and fresh fruits</p>
                            <!-- rating-container -->
                            <div class="rating rating-lg rating-half mx-auto">
                               <input type="radio" name="rating-10" class="rating-hidden" />
                               <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-1" />
                               <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-2" />
-                              <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-1" checked />
+                              <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-1"
+                                 checked />
                               <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-2" />
                               <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-1" />
                               <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-2" />
@@ -368,7 +386,7 @@
                               <button class="bg-primary text-white btn normal-case">Buy Now</button>
                            </div>
                         </div>
-                     </div>                     
+                     </div>
                   </form>
                </dialog>
             </div>
@@ -392,22 +410,25 @@
                      <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-1" />
                      <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-2" />
                   </div>
-                  <btn class="text-primary btn normal-case text-lg font-bold" onclick="bananaCard.showModal()">Details</btn>
+                  <btn class="text-primary btn normal-case text-lg font-bold" onclick="bananaCard.showModal()">Details
+                  </btn>
                </div>
                <!-- Modal -->
                <dialog id="bananaCard" class="modal modal-bottom sm:modal-middle">
                   <form method="dialog" class="modal-box">
                      <div class="card rounded-lg card-compact bg-base-100 text-center">
-                        <figure><img src="./images/fruit9.png"/></figure>
+                        <figure><img src="./images/fruit9.png" /></figure>
                         <div class="card-body">
                            <h2 class="text-heading-color text-2xl font-bold">Apple</h2>
-                           <p class="font-semibold">Proffesional employees are there for you to pick the most amazing and fresh fruits</p>
+                           <p class="font-semibold">Proffesional employees are there for you to pick the most amazing
+                              and fresh fruits</p>
                            <!-- rating-container -->
                            <div class="rating rating-lg rating-half mx-auto">
                               <input type="radio" name="rating-10" class="rating-hidden" />
                               <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-1" />
                               <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-2" />
-                              <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-1" checked />
+                              <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-1"
+                                 checked />
                               <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-2" />
                               <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-1" />
                               <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-2" />
@@ -421,13 +442,80 @@
                               <button class="bg-primary text-white btn normal-case">Buy Now</button>
                            </div>
                         </div>
-                     </div>                     
+                     </div>
                   </form>
                </dialog>
             </div>
          </div>
          <div class="flex justify-center mt-14">
             <button class="btn bg-primary text-white">Shop All</button>
+         </div>
+      </section>
+      <!-- meet the team section -->
+      <section class="mt-14 md:mt-28 p-2">
+         <div class="py-12 lg:py-28 h-auto 2xl:h-screen rounded-xl bg-[url(./images/team.png)] bg-no-repeat bg-cover lg:bg-auto">
+            <div class="ovarlay"></div>
+            <div class="hero-content text-center text-neutral-content">
+               <div class="w-full md:max-w-lg">
+                  <h1 class="mb-5 text-3xl lg:text-5xl font-bold">Meet the team section</h1>
+                  <p class="mb-5">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p> 
+               </div>
+            </div>
+            <!-- card-container -->
+            <div class="grid grid-cols-1 text-white md:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-6">
+               <!-- card1 -->
+               <div class="card p-4 md:p-8 card-compact text-center">
+                  <figure><img src="./images/member1.png" /></figure>
+                  <div class="card-body">
+                     <h2 class="text-2xl text-white font-bold">Awlad Hossain</h2>
+                     <p class="font-semibold text-white">Fruits Expert</p>
+                     <div class="flex gap-3 justify-center">
+                        <img src="./images/facebook 1.svg" class="w-6">
+                        <img src="./images/twitter (1) 1.svg" class="w-6">
+                        <img src="./images/linkedin 1.svg" class="w-6">
+                     </div>
+                  </div>
+               </div>
+               <!-- card2 -->
+               <div class="card p-4 md:p-8 card-compact text-center">
+                  <figure><img src="./images/member2.png" /></figure>
+                  <div class="card-body">
+                     <h2 class="text-2xl text-white font-bold">Safia Chowdhury</h2>
+                     <p class="font-semibold text-white">Fruits Expert</p>
+                     <div class="flex gap-3 justify-center">
+                        <img src="./images/facebook 1.svg" class="w-6">
+                        <img src="./images/twitter (1) 1.svg" class="w-6">
+                        <img src="./images/linkedin 1.svg" class="w-6">
+                     </div>
+                  </div>
+               </div>
+               <!-- card3 -->
+               <div class="card p-4 md:p-8 card-compact text-center">
+                  <figure><img src="./images/member3.png" /></figure>
+                  <div class="card-body">
+                     <h2 class="text-2xl text-white font-bold">Rokib Hossain</h2>
+                     <p class="font-semibold text-white">Fruits Expert</p>
+                     <div class="flex gap-3 justify-center">
+                        <img src="./images/facebook 1.svg" class="w-6">
+                        <img src="./images/twitter (1) 1.svg" class="w-6">
+                        <img src="./images/linkedin 1.svg" class="w-6">
+                     </div>
+                  </div>
+               </div>
+               <!-- card4 -->
+               <div class="card p-4 md:p-8 card-compact text-center">
+                  <figure><img src="./images/member4.png" /></figure>
+                  <div class="card-body">
+                     <h2 class="text-2xl text-white font-bold">Chaity</h2>
+                     <p class="font-semibold text-white">Fruits Expert</p>
+                     <div class="flex gap-3 justify-center">
+                        <img src="./images/facebook 1.svg" class="w-6">
+                        <img src="./images/twitter (1) 1.svg" class="w-6">
+                        <img src="./images/linkedin 1.svg" class="w-6">
+                     </div>
+                  </div>
+               </div>
+            </div>
          </div>
       </section>
    </main>
