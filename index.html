@@ -9,7 +9,9 @@
    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
    <script src="https://cdn.tailwindcss.com"></script>
    <!-- fontAwesome cdn -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
    <!-- customize tailwindcss -->
    <script>
       tailwind.config = {
@@ -18,6 +20,7 @@
                colors: {
                   clifford: '#da373d',
                   primary: '#F85559',
+                  'heading-color': '#121212'
                }
             }
          }
@@ -27,7 +30,7 @@
 
 <body>
 
-   <header class="max-w-7xl mx-auto border-2 border-red-500">
+   <header class="max-w-7xl mx-auto">
       <!-- navbar style -->
       <nav class="navbar bg-base-100 md:bg-primary rounded-full md:mb-5 lg:mb-12">
          <!-- navbar start -->
@@ -62,7 +65,7 @@
          <!-- navbar end -->
          <div class="navbar-end md:ml-auto lg:m-auto">
             <div class="form-control relative hidden md:block">
-               <input type="text" placeholder="Search here" class="input rounded-full input-bordered"/>
+               <input type="text" placeholder="Search here" class="input rounded-full input-bordered" />
                <i class="fa-solid fa-magnifying-glass absolute right-4 top-4"></i>
             </div>
          </div>
@@ -75,73 +78,81 @@
             <div class="hero h-[70vh] lg:h-[calc(100vh-130px)]" style="background-image: url(./images/banner1.png);">
                <div class="hero-overlay"></div>
                <div class="hero-content text-center text-neutral-content">
-                 <div class="max-w-md">
-                   <h1 class="mb-5 text-2xl md:text-3xl lg:text-5xl font-extrabold">Exotic tastes at your doorstep</h1>
-                   <p class="mb-5 text-sm md:text-xl px-10 md:px-0 w-full font-semibold">We supply highly quality organic products</p>
-                   <button class="btn border-0 text-white text-sm md:text-xl font-bold bg-primary">Shop Now</button>
-                 </div>
+                  <div class="max-w-md">
+                     <h1 class="mb-5 text-2xl md:text-3xl lg:text-5xl font-extrabold">Exotic tastes at your doorstep
+                     </h1>
+                     <p class="mb-5 text-sm md:text-xl px-12 md:px-0 w-full font-semibold">We supply highly quality
+                        organic products</p>
+                     <button class="btn border-0 text-white text-sm md:text-xl font-bold bg-primary">Shop Now</button>
+                  </div>
                </div>
-             </div>
-           <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-             <a href="#slide4" class="btn btn-circle bg-[#121212] text-white border-0">❮</a> 
-             <a href="#slide2" class="btn btn-circle bg-[#121212] text-white border-0">❯</a>
-           </div>
-         </div> 
+            </div>
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+               <a href="#slide4" class="btn btn-circle bg-[#121212] text-white border-0">❮</a>
+               <a href="#slide2" class="btn btn-circle bg-[#121212] text-white border-0">❯</a>
+            </div>
+         </div>
          <!-- slide2 -->
          <div id="slide2" class="carousel-item relative w-full">
-           <!-- hero section -->
-           <div class="hero h-[70vh] lg:h-[calc(100vh-130px)]" style="background-image: url(./images/banner2.png);">
-            <div class="hero-overlay"></div>
-            <div class="hero-content text-center text-neutral-content">
-              <div class="max-w-md">
-                <h1 class="mb-5 text-2xl md:text-3xl lg:text-5xl font-extrabold">Exotic tastes at your doorstep</h1>
-                <p class="mb-5 text-sm md:text-xl px-10 md:px-0 w-full font-semibold">We supply highly quality organic products</p>
-                <button class="btn border-0 text-white text-sm md:text-xl font-bold bg-primary">Shop Now</button>
-              </div>
+            <!-- hero section -->
+            <div class="hero h-[70vh] lg:h-[calc(100vh-130px)]" style="background-image: url(./images/banner2.png);">
+               <div class="hero-overlay"></div>
+               <div class="hero-content text-center text-neutral-content">
+                  <div class="max-w-md">
+                     <h1 class="mb-5 text-2xl md:text-3xl lg:text-5xl font-extrabold">Exotic tastes at your doorstep
+                     </h1>
+                     <p class="mb-5 text-sm md:text-xl px-10 md:px-0 w-full font-semibold">We supply highly quality
+                        organic products</p>
+                     <button class="btn border-0 text-white text-sm md:text-xl font-bold bg-primary">Shop Now</button>
+                  </div>
+               </div>
             </div>
-          </div>
-          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide1" class="btn btn-circle bg-[#121212] text-white border-0">❮</a> 
-            <a href="#slide3" class="btn btn-circle bg-[#121212] text-white border-0">❯</a>
-          </div>
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+               <a href="#slide1" class="btn btn-circle bg-[#121212] text-white border-0">❮</a>
+               <a href="#slide3" class="btn btn-circle bg-[#121212] text-white border-0">❯</a>
+            </div>
          </div>
-         <!-- slide3 --> 
+         <!-- slide3 -->
          <div id="slide3" class="carousel-item relative w-full">
-           <!-- hero section -->
-           <div class="hero h-[70vh] lg:h-[calc(100vh-130px)]" style="background-image: url(./images/banner3.png);">
-            <div class="hero-overlay"></div>
-            <div class="hero-content text-center text-neutral-content">
-              <div class="max-w-md">
-                <h1 class="mb-5 text-2xl md:text-3xl lg:text-5xl font-extrabold">Exotic tastes at your doorstep</h1>
-                <p class="mb-5 text-sm md:text-xl px-10 md:px-0 w-full font-semibold">We supply highly quality organic products</p>
-                <button class="btn border-0 text-white text-sm md:text-xl font-bold bg-primary">Shop Now</button>
-              </div>
+            <!-- hero section -->
+            <div class="hero h-[70vh] lg:h-[calc(100vh-130px)]" style="background-image: url(./images/banner3.png);">
+               <div class="hero-overlay"></div>
+               <div class="hero-content text-center text-neutral-content">
+                  <div class="max-w-md">
+                     <h1 class="mb-5 text-2xl md:text-3xl lg:text-5xl font-extrabold">Exotic tastes at your doorstep
+                     </h1>
+                     <p class="mb-5 text-sm md:text-xl px-10 md:px-0 w-full font-semibold">We supply highly quality
+                        organic products</p>
+                     <button class="btn border-0 text-white text-sm md:text-xl font-bold bg-primary">Shop Now</button>
+                  </div>
+               </div>
             </div>
-          </div>
-          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide2" class="btn btn-circle bg-[#121212] text-white border-0">❮</a> 
-            <a href="#slide4" class="btn btn-circle bg-[#121212] text-white border-0">❯</a>
-          </div>
-         </div> 
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+               <a href="#slide2" class="btn btn-circle bg-[#121212] text-white border-0">❮</a>
+               <a href="#slide4" class="btn btn-circle bg-[#121212] text-white border-0">❯</a>
+            </div>
+         </div>
          <!-- slide4 -->
          <div id="slide4" class="carousel-item relative w-full">
-           <!-- hero section -->
-           <div class="hero h-[70vh] lg:h-[calc(100vh-130px)]" style="background-image: url(./images/banner4.png);">
-            <div class="hero-overlay"></div>
-            <div class="hero-content text-center text-neutral-content">
-              <div class="max-w-md">
-                <h1 class="mb-5 text-2xl md:text-3xl lg:text-5xl font-extrabold">Exotic tastes at your doorstep</h1>
-                <p class="mb-5 text-sm md:text-xl px-10 md:px-0 w-full font-semibold">We supply highly quality organic products</p>
-                <button class="btn border-0 text-white text-sm md:text-xl font-bold bg-primary">Shop Now</button>
-              </div>
+            <!-- hero section -->
+            <div class="hero h-[70vh] lg:h-[calc(100vh-130px)]" style="background-image: url(./images/banner4.png);">
+               <div class="hero-overlay"></div>
+               <div class="hero-content text-center text-neutral-content">
+                  <div class="max-w-md">
+                     <h1 class="mb-5 text-2xl md:text-3xl lg:text-5xl font-extrabold">Exotic tastes at your doorstep
+                     </h1>
+                     <p class="mb-5 text-sm md:text-xl px-10 md:px-0 w-full font-semibold">We supply highly quality
+                        organic products</p>
+                     <button class="btn border-0 text-white text-sm md:text-xl font-bold bg-primary">Shop Now</button>
+                  </div>
+               </div>
             </div>
-          </div>
-          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide3" class="btn btn-circle bg-[#121212] text-white border-0">❮</a> 
-            <a href="#slide1" class="btn btn-circle bg-[#121212] text-white border-0">❯</a>
-          </div>
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+               <a href="#slide3" class="btn btn-circle bg-[#121212] text-white border-0">❮</a>
+               <a href="#slide1" class="btn btn-circle bg-[#121212] text-white border-0">❯</a>
+            </div>
          </div>
-       </div>
+      </div>
    </header>
    <main class="max-w-7xl mx-auto">
       <!-- fruit section start -->
@@ -152,6 +163,271 @@
             <img src="./images/fruit3.png" class="md:w-20 lg:w-24">
             <img src="./images/fruit4.png" class="md:w-20 lg:w-24">
             <img src="./images/fruit5.png" class="md:w-20 lg:w-24">
+         </div>
+      </section>
+      <!-- deal of the day section -->
+      <section class="border-2 mt-4 lg:mt-0 border-red-500 p-2">
+         <!-- flex-container -->
+         <div class="flex flex-col md:flex-row justify-between items-center">
+            <div class="w-full mb-4 lg:mb-0 md:w-1/2">
+               <h2 class="text-3xl text-center md:text-left lg:text-5xl font-extrabold">Deal of the day</h2>
+               <p class="font-semibold text-center md:text-left mt-3 md:mt-6">Contrary to popular belief, is not simply
+                  random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000
+                  years old.</p>
+            </div>
+            <div class="flex items-center gap-0 md:gap-2 lg:gap-6">
+               <div class="text-center">
+                  <h4 class="text-heading-color text-3xl md:text-4xl lg:text-5xl font-extrabold">29</h4>
+                  <p class="font-semibold">Days</p>
+               </div>
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path
+                     d="M12 6.75C11.8011 6.75 11.6103 6.67098 11.4697 6.53033C11.329 6.38968 11.25 6.19891 11.25 6C11.25 5.80109 11.329 5.61032 11.4697 5.46967C11.6103 5.32902 11.8011 5.25 12 5.25C12.1989 5.25 12.3897 5.32902 12.5303 5.46967C12.671 5.61032 12.75 5.80109 12.75 6C12.75 6.19891 12.671 6.38968 12.5303 6.53033C12.3897 6.67098 12.1989 6.75 12 6.75ZM12 12.75C11.8011 12.75 11.6103 12.671 11.4697 12.5303C11.329 12.3897 11.25 12.1989 11.25 12C11.25 11.8011 11.329 11.6103 11.4697 11.4697C11.6103 11.329 11.8011 11.25 12 11.25C12.1989 11.25 12.3897 11.329 12.5303 11.4697C12.671 11.6103 12.75 11.8011 12.75 12C12.75 12.1989 12.671 12.3897 12.5303 12.5303C12.3897 12.671 12.1989 12.75 12 12.75ZM12 18.75C11.8011 18.75 11.6103 18.671 11.4697 18.5303C11.329 18.3897 11.25 18.1989 11.25 18C11.25 17.8011 11.329 17.6103 11.4697 17.4697C11.6103 17.329 11.8011 17.25 12 17.25C12.1989 17.25 12.3897 17.329 12.5303 17.4697C12.671 17.6103 12.75 17.8011 12.75 18C12.75 18.1989 12.671 18.3897 12.5303 18.5303C12.3897 18.671 12.1989 18.75 12 18.75Z"
+                     stroke="#121212" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+               </svg>
+               <div class="text-center">
+                  <h4 class="text-heading-color text-3xl md:text-4xl lg:text-5xl font-extrabold">15</h4>
+                  <p class="font-semibold">Hours</p>
+               </div>
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path
+                     d="M12 6.75C11.8011 6.75 11.6103 6.67098 11.4697 6.53033C11.329 6.38968 11.25 6.19891 11.25 6C11.25 5.80109 11.329 5.61032 11.4697 5.46967C11.6103 5.32902 11.8011 5.25 12 5.25C12.1989 5.25 12.3897 5.32902 12.5303 5.46967C12.671 5.61032 12.75 5.80109 12.75 6C12.75 6.19891 12.671 6.38968 12.5303 6.53033C12.3897 6.67098 12.1989 6.75 12 6.75ZM12 12.75C11.8011 12.75 11.6103 12.671 11.4697 12.5303C11.329 12.3897 11.25 12.1989 11.25 12C11.25 11.8011 11.329 11.6103 11.4697 11.4697C11.6103 11.329 11.8011 11.25 12 11.25C12.1989 11.25 12.3897 11.329 12.5303 11.4697C12.671 11.6103 12.75 11.8011 12.75 12C12.75 12.1989 12.671 12.3897 12.5303 12.5303C12.3897 12.671 12.1989 12.75 12 12.75ZM12 18.75C11.8011 18.75 11.6103 18.671 11.4697 18.5303C11.329 18.3897 11.25 18.1989 11.25 18C11.25 17.8011 11.329 17.6103 11.4697 17.4697C11.6103 17.329 11.8011 17.25 12 17.25C12.1989 17.25 12.3897 17.329 12.5303 17.4697C12.671 17.6103 12.75 17.8011 12.75 18C12.75 18.1989 12.671 18.3897 12.5303 18.5303C12.3897 18.671 12.1989 18.75 12 18.75Z"
+                     stroke="#121212" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+               </svg>
+               <div class="text-center">
+                  <h4 class="text-heading-color text-3xl md:text-4xl lg:text-5xl font-extrabold">25</h4>
+                  <p class="font-semibold">Minutes</p>
+               </div>
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path
+                     d="M12 6.75C11.8011 6.75 11.6103 6.67098 11.4697 6.53033C11.329 6.38968 11.25 6.19891 11.25 6C11.25 5.80109 11.329 5.61032 11.4697 5.46967C11.6103 5.32902 11.8011 5.25 12 5.25C12.1989 5.25 12.3897 5.32902 12.5303 5.46967C12.671 5.61032 12.75 5.80109 12.75 6C12.75 6.19891 12.671 6.38968 12.5303 6.53033C12.3897 6.67098 12.1989 6.75 12 6.75ZM12 12.75C11.8011 12.75 11.6103 12.671 11.4697 12.5303C11.329 12.3897 11.25 12.1989 11.25 12C11.25 11.8011 11.329 11.6103 11.4697 11.4697C11.6103 11.329 11.8011 11.25 12 11.25C12.1989 11.25 12.3897 11.329 12.5303 11.4697C12.671 11.6103 12.75 11.8011 12.75 12C12.75 12.1989 12.671 12.3897 12.5303 12.5303C12.3897 12.671 12.1989 12.75 12 12.75ZM12 18.75C11.8011 18.75 11.6103 18.671 11.4697 18.5303C11.329 18.3897 11.25 18.1989 11.25 18C11.25 17.8011 11.329 17.6103 11.4697 17.4697C11.6103 17.329 11.8011 17.25 12 17.25C12.1989 17.25 12.3897 17.329 12.5303 17.4697C12.671 17.6103 12.75 17.8011 12.75 18C12.75 18.1989 12.671 18.3897 12.5303 18.5303C12.3897 18.671 12.1989 18.75 12 18.75Z"
+                     stroke="#121212" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+               </svg>
+               <div class="text-center">
+                  <h4 class="text-heading-color text-3xl md:text-4xl lg:text-5xl font-extrabold">08</h4>
+                  <p class="font-semibold">Seconds</p>
+               </div>
+            </div>
+         </div>
+         <!-- grid-card-container -->
+         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
+            <!-- card1 -->
+            <div class="card rounded-lg border p-8 card-compact bg-base-100 shadow-xl text-center">
+               <figure><img src="./images/fruit6.png" /></figure>
+               <div class="card-body">
+                  <h2 class="text-heading-color text-2xl font-bold">12.90$ - 18.85$</h2>
+                  <p class="font-semibold">Apples</p>
+                  <!-- rating-container -->
+                  <div class="rating rating-lg rating-half">
+                     <input type="radio" name="rating-10" class="rating-hidden" />
+                     <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-1" />
+                     <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-2" />
+                     <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-1" checked />
+                     <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-2" />
+                     <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-1" />
+                     <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-2" />
+                     <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-1" />
+                     <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-2" />
+                     <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-1" />
+                     <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-2" />
+                  </div>
+                  <btn class="text-primary btn normal-case text-lg font-bold" onclick="appleCard.showModal()">Details</btn>
+               </div>
+               <!-- Modal -->
+               <dialog id="appleCard" class="modal modal-bottom sm:modal-middle">
+                  <form method="dialog" class="modal-box">
+                     <div class="card rounded-lg card-compact bg-base-100 text-center">
+                        <figure><img src="./images/fruit6.png"/></figure>
+                        <div class="card-body">
+                           <h2 class="text-heading-color text-2xl font-bold">Apple</h2>
+                           <p class="font-semibold">Proffesional employees are there for you to pick the most amazing and fresh fruits</p>
+                           <!-- rating-container -->
+                           <div class="rating rating-lg rating-half mx-auto">
+                              <input type="radio" name="rating-10" class="rating-hidden" />
+                              <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-1" />
+                              <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-2" />
+                              <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-1" checked />
+                              <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-2" />
+                              <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-1" />
+                              <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-2" />
+                              <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-1" />
+                              <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-2" />
+                              <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-1" />
+                              <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-2" />
+                           </div>
+                           <div class="modal-action gap-4 mx-auto">
+                              <button class="btn bg-transparent border border-primary text-primary">Close</button>
+                              <button class="bg-primary text-white btn normal-case">Buy Now</button>
+                           </div>
+                        </div>
+                     </div>
+
+                     
+                  </form>
+               </dialog>
+            </div>
+            <!-- card2 -->
+            <div class="card rounded-lg border p-8 card-compact bg-base-100 shadow-xl text-center">
+               <figure><img src="./images/fruit7.png" /></figure>
+               <div class="card-body">
+                  <h2 class="text-heading-color text-2xl font-bold">12.90$ - 18.85$</h2>
+                  <p class="font-semibold">Orange</p>
+                  <!-- rating-container -->
+                  <div class="rating rating-lg rating-half">
+                     <input type="radio" name="rating-10" class="rating-hidden" />
+                     <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-1" />
+                     <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-2" />
+                     <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-1" checked />
+                     <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-2" />
+                     <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-1" />
+                     <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-2" />
+                     <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-1" />
+                     <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-2" />
+                     <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-1" />
+                     <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-2" />
+                  </div>
+                  <btn class="text-primary btn normal-case text-lg font-bold" onclick="orangeCard.showModal()">Details</btn>
+               </div>
+               <!-- Modal -->
+               <dialog id="orangeCard" class="modal modal-bottom sm:modal-middle">
+                  <form method="dialog" class="modal-box">
+                     <div class="card rounded-lg card-compact bg-base-100 text-center">
+                        <figure><img src="./images/fruit7.png"/></figure>
+                        <div class="card-body">
+                           <h2 class="text-heading-color text-2xl font-bold">Apple</h2>
+                           <p class="font-semibold">Proffesional employees are there for you to pick the most amazing and fresh fruits</p>
+                           <!-- rating-container -->
+                           <div class="rating rating-lg rating-half mx-auto">
+                              <input type="radio" name="rating-10" class="rating-hidden" />
+                              <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-1" />
+                              <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-2" />
+                              <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-1" checked />
+                              <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-2" />
+                              <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-1" />
+                              <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-2" />
+                              <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-1" />
+                              <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-2" />
+                              <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-1" />
+                              <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-2" />
+                           </div>
+                           <div class="modal-action gap-4 mx-auto">
+                              <button class="btn bg-transparent border border-primary text-primary">Close</button>
+                              <button class="bg-primary text-white btn normal-case">Buy Now</button>
+                           </div>
+                        </div>
+                     </div>                     
+                  </form>
+               </dialog>
+            </div>
+            <!-- card3 -->
+            <div class="card rounded-lg border p-8 card-compact bg-base-100 shadow-xl text-center">
+               <figure><img src="./images/fruit8.png" /></figure>
+               <div class="card-body">
+                  <h2 class="text-heading-color text-2xl font-bold">12.90$ - 18.85$</h2>
+                  <p class="font-semibold">Strawbarry</p>
+                  <!-- rating-container -->
+                  <div class="rating rating-lg rating-half">
+                     <input type="radio" name="rating-10" class="rating-hidden" />
+                     <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-1" />
+                     <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-2" />
+                     <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-1" checked />
+                     <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-2" />
+                     <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-1" />
+                     <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-2" />
+                     <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-1" />
+                     <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-2" />
+                     <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-1" />
+                     <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-2" />
+                  </div>
+                  <btn class="text-primary btn normal-case text-lg font-bold" onclick="strawbarryCard.showModal()">Details</btn>
+               </div>
+               <!-- Modal -->
+               <dialog id="strawbarryCard" class="modal modal-bottom sm:modal-middle">
+                  <form method="dialog" class="modal-box">
+                     <div class="card rounded-lg card-compact bg-base-100 text-center">
+                        <figure><img src="./images/fruit8.png"/></figure>
+                        <div class="card-body">
+                           <h2 class="text-heading-color text-2xl font-bold">Apple</h2>
+                           <p class="font-semibold">Proffesional employees are there for you to pick the most amazing and fresh fruits</p>
+                           <!-- rating-container -->
+                           <div class="rating rating-lg rating-half mx-auto">
+                              <input type="radio" name="rating-10" class="rating-hidden" />
+                              <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-1" />
+                              <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-2" />
+                              <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-1" checked />
+                              <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-2" />
+                              <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-1" />
+                              <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-2" />
+                              <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-1" />
+                              <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-2" />
+                              <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-1" />
+                              <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-2" />
+                           </div>
+                           <div class="modal-action gap-4 mx-auto">
+                              <button class="btn bg-transparent border border-primary text-primary">Close</button>
+                              <button class="bg-primary text-white btn normal-case">Buy Now</button>
+                           </div>
+                        </div>
+                     </div>                     
+                  </form>
+               </dialog>
+            </div>
+            <!-- card4 -->
+            <div class="card rounded-lg border p-8 card-compact bg-base-100 shadow-xl text-center">
+               <figure><img src="./images/fruit9.png" /></figure>
+               <div class="card-body">
+                  <h2 class="text-heading-color text-2xl font-bold">12.90$ - 18.85$</h2>
+                  <p class="font-semibold">Banana</p>
+                  <!-- rating-container -->
+                  <div class="rating rating-lg rating-half">
+                     <input type="radio" name="rating-10" class="rating-hidden" />
+                     <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-1" />
+                     <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-2" />
+                     <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-1" checked />
+                     <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-2" />
+                     <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-1" />
+                     <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-2" />
+                     <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-1" />
+                     <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-2" />
+                     <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-1" />
+                     <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-2" />
+                  </div>
+                  <btn class="text-primary btn normal-case text-lg font-bold" onclick="bananaCard.showModal()">Details</btn>
+               </div>
+               <!-- Modal -->
+               <dialog id="bananaCard" class="modal modal-bottom sm:modal-middle">
+                  <form method="dialog" class="modal-box">
+                     <div class="card rounded-lg card-compact bg-base-100 text-center">
+                        <figure><img src="./images/fruit9.png"/></figure>
+                        <div class="card-body">
+                           <h2 class="text-heading-color text-2xl font-bold">Apple</h2>
+                           <p class="font-semibold">Proffesional employees are there for you to pick the most amazing and fresh fruits</p>
+                           <!-- rating-container -->
+                           <div class="rating rating-lg rating-half mx-auto">
+                              <input type="radio" name="rating-10" class="rating-hidden" />
+                              <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-1" />
+                              <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-2" />
+                              <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-1" checked />
+                              <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-2" />
+                              <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-1" />
+                              <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-2" />
+                              <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-1" />
+                              <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-2" />
+                              <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-1" />
+                              <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-2" />
+                           </div>
+                           <div class="modal-action gap-4 mx-auto">
+                              <button class="btn bg-transparent border border-primary text-primary">Close</button>
+                              <button class="bg-primary text-white btn normal-case">Buy Now</button>
+                           </div>
+                        </div>
+                     </div>                     
+                  </form>
+               </dialog>
+            </div>
+         </div>
+         <div class="flex justify-center mt-14">
+            <button class="btn bg-primary text-white">Shop All</button>
          </div>
       </section>
    </main>
